@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Altar Setup Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Altar Setup Trainer</h1>
+    <p>Drag items onto the altar. Tap an item to rotate. Press “Check”.</p>
+  </header>
+
+  <main class="layout">
+    <section class="tray">
+      <h2>Items</h2>
+      <div class="tray-items" id="tray"></div>
+
+      <div class="buttons">
+        <button id="btnReset">Reset</button>
+        <button id="btnRandom">Randomize</button>
+        <button id="btnCheck" class="primary">Check</button>
+      </div>
+
+      <pre class="status" id="status"></pre>
+    </section>
+
+    <section class="board-wrap">
+      <h2>Altar</h2>
+      <div class="board" id="board">
+        <img class="altar" src="assets/altar.jpg" alt="altar" />
+      </div>
+      <p class="hint">Tip: tap an item to rotate 15°.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
